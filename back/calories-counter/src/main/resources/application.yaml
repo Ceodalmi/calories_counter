@@ -1,0 +1,13 @@
+server:
+    port: 8090
+    servlet:
+        context-path: /calories_counter
+
+application:
+    schema: CALORIES_COUTER
+    external:
+        config: ${sirhen.server.config.url}
+    name: "CALORIES COUNTER"
+    build:
+        version: "@project.version@"
+        timestamp: "@timestamp@"
